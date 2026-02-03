@@ -96,6 +96,12 @@ How Endee is Used
           db.add(...)
           db.query(...)
 
+Output 
+
+<img width="1915" height="967" alt="Screenshot 2026-02-03 101055" src="https://github.com/user-attachments/assets/1ed5c067-f45d-4836-a732-8c572c2bca26" />
+
+Streamlit Link : https://ai-assistant-rag-kuwufuyg52hc37pnb4yd6l.streamlit.app/
+
 Future Enhancements
 
   * ChatGPT / LLM-based answer generation

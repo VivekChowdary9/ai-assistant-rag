@@ -99,6 +99,7 @@ How Endee is Used
 Output 
 
 <img width="1915" height="967" alt="Screenshot 2026-02-03 101055" src="https://github.com/user-attachments/assets/1ed5c067-f45d-4836-a732-8c572c2bca26" />
+<img width="1916" height="975" alt="Screenshot 2026-02-03 101331" src="https://github.com/user-attachments/assets/b2529ffe-acd4-4670-82fd-c65e0ab76702" />
 
 Streamlit Link : https://ai-assistant-rag-kuwufuyg52hc37pnb4yd6l.streamlit.app/
 

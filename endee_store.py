@@ -1,26 +1,24 @@
 from endee import Endee
 from embedder import Embedder
-import uuid
 
 class EndeeStore:
     def __init__(self):
-        self.db = Endee()
         self.embedder = Embedder()
+        self.db = Endee(collection_name="documents")
 
-    def add_documents(self, documents):
-        embeddings = self.embedder.embed(documents)
-
-        for text, vector in zip(documents, embeddings):
+    def add_documents(self, docs):
+        embeddings = self.embedder.embed(docs)
+        for i, doc in enumerate(docs):
             self.db.add(
-                id=str(uuid.uuid4()),
-                vector=vector,
-                metadata={"text": text}
+                id=str(i),
+                vector=embeddings[i],
+                metadata={"text": doc}
             )
 
-    def search(self, query, top_k=5):
+    def search(self, query, top_k=3):
         query_vector = self.embedder.embed([query])[0]
 
-        results = self.db.search(
+        results = self.db.query(
             vector=query_vector,
             top_k=top_k
         )
